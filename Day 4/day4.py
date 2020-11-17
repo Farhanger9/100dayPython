@@ -1,4 +1,11 @@
 import random
 
-randdom_int = random.radint(1,10)
-print(randdom_int)
+test_seed = int(input("Create a seed number: "))
+random.seed(test_seed)
+
+rad = random.randint(0,1)
+
+if rad == "1":
+  print("this is Head")
+else:
+   print("This is Tail") 
